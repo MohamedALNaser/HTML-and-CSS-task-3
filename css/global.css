@@ -47,6 +47,12 @@ p {
     /* color: #979191; */
 }
 
+h1 {
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
 .container {
     width: 1170px;
     margin: 0 auto;
