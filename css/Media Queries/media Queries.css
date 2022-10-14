@@ -1,0 +1,66 @@
+/* // Extra Small devices (landscape phones, less than 280px) */
+
+@media (min-width: 260px) and (max-width: 319.98px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+/* // very Small devices (landscape phones, less than 480px) */
+
+@media (min-width: 320px) and (max-width: 485.98px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+/* // Small devices (landscape phones, less than 576px) */
+
+@media (min-width: 486px) and (max-width: 575.98px) {
+    .container {
+        max-width: 440px;
+    }
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {}
