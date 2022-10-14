@@ -13,7 +13,7 @@ header .container .lang {
   align-items: center;
 }
 
-.bottom-slide .container, section.section-container .sec-2 .sec-2-content, section.section-container .sec-1, header .container .log-in, header .container {
+.bottom-slide .container, footer .container .right .col-2 .col-2-content, footer .container .right, section.section-container .sec-2 .sec-2-content, section.section-container .sec-1, header .container .log-in, header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +35,7 @@ header .container .log-in .log {
   cursor: pointer;
 }
 
-section.section-container .sec-2 .sec-2-content .right .btn:hover, header .home .btn:hover, header .container .log-in > li:hover, header .container .logo:hover {
+footer .container .right .col-4 .email-box:hover, footer .container .left .icons a:hover, footer .container .left .logo:hover, section.section-container .sec-2 .sec-2-content .right .btn:hover, header .home .btn:hover, header .container .log-in > li:hover, header .container .logo:hover {
   transform: scale(1.02) translateY(5px);
   -webkit-transform: scale(1.02) translateY(5px);
   -moz-transform: scale(1.02) translateY(5px);
@@ -44,7 +44,7 @@ section.section-container .sec-2 .sec-2-content .right .btn:hover, header .home 
 }
 
 .page {
-  margin-bottom: 110px;
+  margin-bottom: 85px;
 }
 
 /*start header section style*/
@@ -211,6 +211,7 @@ section.section-container .sec-1 p {
 section.section-container .sec-1 .left h1 {
   font-size: 55px;
   margin-bottom: 50px;
+  direction: rtl;
 }
 section.section-container .sec-1 .right h1 {
   color: #000;
@@ -295,6 +296,115 @@ section.section-container .sec-2 .sec-2-content .right .btn {
 }
 /*end of sections section*/
 /*start of footer section*/
+footer {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 80px 0 10px;
+  text-align: right;
+  position: relative;
+}
+footer .container {
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+footer .container .left {
+  max-width: 33.333333333%;
+}
+footer .container .left .logo {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+footer .container .left .logo img {
+  width: 25%;
+}
+footer .container .left .icons {
+  padding: 30px 0;
+}
+footer .container .left .icons a {
+  background-color: #334d74;
+  color: #fff;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+footer .container .left .icons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--second-color);
+}
+footer .container .right {
+  width: 66.666666667%;
+}
+footer .container .right h5 {
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .container .right > div {
+  min-height: 100%;
+}
+footer .container .right > div li {
+  padding: 10px 0;
+}
+footer .container .right > div li a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+footer .container .right > div li a:hover {
+  color: var(--main-color);
+}
+footer .container .right .col-3 {
+  direction: rtl;
+}
+footer .container .right .col-4 h5 {
+  margin-bottom: 20px;
+}
+footer .container .right .col-4 .email-box {
+  background-color: #334d74;
+  padding: 20px 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+footer .container .right .col-4 .email-box:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+footer .container .right .col-4 .email-box a {
+  display: flex;
+  color: #fff;
+}
+footer .container .right .col-4 .email-box a .text {
+  margin-right: 10px;
+}
+footer .container .right .col-4 .email-box a .text h6 {
+  font-size: 20px;
+}
+footer .container .right .col-4 .email-box a .text p {
+  font-weight: 400;
+  font-size: 15px;
+  padding: 5px 0;
+}
+footer .container .right .col-4 .email-box a .icon img {
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+footer .container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, 0px);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
 /*end of footer section*/
 .bottom-slide {
   width: 100%;
