@@ -170,6 +170,14 @@ header {
             left: -100px;
             top: -65px;
             z-index: 1;
+            // &:hover {
+            //     animation-play-state: paused;
+            // }
+            @keyframes span {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
         }
          :nth-child(2) {
             right: -80px;
@@ -231,7 +239,7 @@ section.section-container {
         }
         p {
             font-size: 18px;
-            color: #ddd;
+            color: #9d9d9d;
         }
         .left {
             h1 {
@@ -260,6 +268,9 @@ section.section-container {
     }
     .sec-2 {
         text-align: right;
+        >P {
+            margin-bottom: 37px;
+        }
         .sec-2-content {
             background-color: rgba(0, 168, 143, 0.1411764706);
             @extend%disFRight;
@@ -332,6 +343,22 @@ section.section-container {
                 }
             }
         }
+    }
+    .sec-3 {
+        display: flex;
+        justify-content: space-between;
+        direction: rtl;
+        >div {
+            width: calc(94% / 4);
+            h3 {
+                font-size: 22px;
+                margin-bottom: 15px;
+            }
+            p {
+                color: #9d9d9d;
+            }
+        }
+        .servse-1 {}
     }
 }
 

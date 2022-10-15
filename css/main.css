@@ -151,6 +151,16 @@ header .header-imgs :nth-child(1) {
   top: -65px;
   z-index: 1;
 }
+@-webkit-keyframes span {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes span {
+  to {
+    transform: rotate(360deg);
+  }
+}
 header .header-imgs :nth-child(2) {
   right: -80px;
   top: -65px;
@@ -206,7 +216,7 @@ section.section-container .sec-1 > div {
 }
 section.section-container .sec-1 p {
   font-size: 18px;
-  color: #ddd;
+  color: #9d9d9d;
 }
 section.section-container .sec-1 .left h1 {
   font-size: 55px;
@@ -230,6 +240,9 @@ section.section-container .sec-1 .right p strong {
 }
 section.section-container .sec-2 {
   text-align: right;
+}
+section.section-container .sec-2 > P {
+  margin-bottom: 37px;
 }
 section.section-container .sec-2 .sec-2-content {
   background-color: rgba(0, 168, 143, 0.1411764706);
@@ -293,6 +306,21 @@ section.section-container .sec-2 .sec-2-content .right .btn {
   -moz-border-radius: 35px;
   -ms-border-radius: 35px;
   -o-border-radius: 35px;
+}
+section.section-container .sec-3 {
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+}
+section.section-container .sec-3 > div {
+  width: 23.5%;
+}
+section.section-container .sec-3 > div h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+section.section-container .sec-3 > div p {
+  color: #9d9d9d;
 }
 /*end of sections section*/
 /*start of footer section*/
